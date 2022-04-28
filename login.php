@@ -16,7 +16,7 @@ $row = mysqli_num_rows($result);
 
 if($row==1){
     $_SESSION['usuario']= $usuario;
-    header('location:painel.php');
+    header('location:index_admin.php');
     exit();
 }else{
     $_SESSION['nao_autenticado']=true;
